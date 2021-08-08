@@ -13,3 +13,18 @@ https://www.boostcourse.org/cs112
 cs강의
 
 
+
+
+
+
+
+
+
+
+
+
+
+https://www.techbeamers.com/python-interview-questions-programmers/
+
+https://ichi.pro/ko/2019-nyeon-top-100-python-inteobyu-jilmun-mich-dabbyeon-178268384538783
+
