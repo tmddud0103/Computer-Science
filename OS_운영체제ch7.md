@@ -1,0 +1,55 @@
+# CH7 Deadlocks
+
+## 교착상태
+
+![image-20210921163214760](photo/image-20210921163214760.png)
+
+
+
+### Deadlock 발생의 4가지 조건
+
+![image-20210921163835801](photo/image-20210921163835801.png)
+
+
+
+### Resource-Allocation Graph(자원 할당 그래프)
+
+![image-20210921164021455](photo/image-20210921164021455.png)
+
+동그라미는 프로세스 
+
+점은 자원
+
+![image-20210921164130549](photo/image-20210921164130549.png)
+
+
+
+## Deadlock 처리 방법
+
+![image-20210921164539833](photo/image-20210921164539833.png)
+
+### 1. Deadlock Prevention
+
+![image-20210921164735394](photo/image-20210921164735394.png)
+
+### 2. Deadlock Avoidance
+
+![image-20210921165226637](photo/image-20210921165226637.png)
+
+![image-20210921165411919](photo/image-20210921165411919.png)
+
+![image-20210921165435429](photo/image-20210921165435429.png)
+
+![image-20210921165703680](photo/image-20210921165703680.png)
+
+
+
+![image-20210921171320745](photo/image-20210921171320745.png)
+
+![image-20210921171427402](photo/image-20210921171427402.png)
+
+![image-20210921171613488](photo/image-20210921171613488.png)
+
+![image-20210921171911727](photo/image-20210921171911727.png)
+
+![image-20210921172023377](photo/image-20210921172023377.png)
