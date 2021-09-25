@@ -1,6 +1,6 @@
 # CH8 Memory Management
 
->  메모리 관리
+>  메모리 관리
 
 ### Logical address(=virtual address 가상 주소)
 
@@ -18,9 +18,9 @@
 
 
 
-## 주소 바인딩(Address Binding)
+## 주소 바인딩(Address Binding)
 
-#### 주소를 결정하는 것
+#### 주소를 결정하는 것
 
 Symbolic Address => Logical Address => Physical Address 
 
@@ -39,7 +39,7 @@ Symbolic Address => Logical Address => Physical Address
 ### Load time binding
 
 - Loader의 책임하에 물리적 메모리 주소 부여
-- 컴파일러가 재배치가능코드(relocatable code)를 생성한 경우 가능
+- 컴파일러가 재배치가능코드(relocatable code)를 생성한 경우 가능
 
 ### Execution time binding (=Run time binding)
 
@@ -109,7 +109,7 @@ Symbolic Address => Logical Address => Physical Address
   - 라이브러리가 실행시 연결(link)됨
   - 라이브러리 호출 부분에 라이브러리 루틴의 위치를 찾기 위한 stub이라는 작은 코드를 둠
   - 라이브러리가 이미 메모리에 있으면 그 루틴의 주소로 가고 없으면 디스크에서 읽어옴
-  - 운영체제의 도움이 필요
+  - 운영체제의 도움이 필요
 
 ### Overlays
 
@@ -147,19 +147,19 @@ Symbolic Address => Logical Address => Physical Address
 
 ## Allocation of Physical Memory 물리적 메모리의 영역
 
-- ### 메모리는 일반적으로 두 영역으로 나뉘어 사용
+- ### 메모리는 일반적으로 두 영역으로 나뉘어 사용
 
   - #### OC 상주 영역
 
     - interrupt vector와 함께 낮은 주소 영역 사용
 
-  - #### 사용자 프로세스 영역
+  - #### 사용자 프로세스 영역
 
-    - 높은 주소 영역 사용
+    - 높은 주소 영역 사용
 
 ![image-20210922215310249](photo/image-20210922215310249.png)
 
-- ### 사용자 프로세스 영역의 할당 방법
+- ### 사용자 프로세스 영역의 할당 방법
 
   - #### Contiguous allocation 연속 할당
 
@@ -178,13 +178,13 @@ Symbolic Address => Logical Address => Physical Address
     - ##### Segmentation 
 
       - 코드, 데이터, 스택 세그먼트로 잘라서 필요시에 물리적 메모리(다른 위치에)에 올려놓을 수 있게 하는 방법
-      - 의미 단위로 자르기 때문에 코드가 균일하지 않음
+      - 의미 단위로 자르기 때문에 코드가 균일하지 않음
 
     - ##### Paged Segmentation
 
 
 
-## Contiguous allocation 연속 할당
+## Contiguous allocation 연속 할당
 
 - #### Fixed partition allocation 고정 분할 방식
 
@@ -205,16 +205,16 @@ Symbolic Address => Logical Address => Physical Address
 
 ![image-20210922215643651](photo/image-20210922215643651.png)
 
-#### External fragmentation 외부 조각
+#### External fragmentation 외부 조각
 
 - 프로그램 크기보다 분할의 크기가 작은 경우
 - 아무 프로그램에도 배정되지 않은 빈 곳인데도 프로그램이 올라갈 수 없는 작은 분할
 
-#### Ixternal fragmentation 내부 조각
+#### Ixternal fragmentation 내부 조각
 
 - 프로그갬의 크기보다 분할의 크기가 큰 경우
 - 하나의 분할 내부에서 발생하는 사용되지 않는 메모리 조각
-- 특정 프로그램에 배정되었지만 사용되지 않는 공간
+- 특정 프로그램에 배정되었지만 사용되지 않는 공간
 
 ![image-20210922220159559](photo/image-20210922220159559.png)
 
@@ -222,7 +222,7 @@ Symbolic Address => Logical Address => Physical Address
 
 ![image-20210922220404063](photo/image-20210922220404063.png)
 
- => 디스크 조각 모음(호락호락한 방법은 아님(비용이 많이 든다))
+ => 디스크 조각 모음(호락호락한 방법은 아님(비용이 많이 든다))
 
 
 
@@ -231,3 +231,69 @@ Symbolic Address => Logical Address => Physical Address
 ### Paging
 
 ![image-20210922220902292](photo/image-20210922220902292.png)
+
+![image-20210925182027942](photo/image-20210925182027942.png)
+
+로지컬에 존재하는 만큼 페이지의 엔트리가 존재 => 엔트리가 가리키는 물리적메모리에 페이지가 존재
+
+![image-20210925182154732](photo/image-20210925182154732.png)
+
+![image-20210925182532499](photo/image-20210925182532499.png)
+
+
+
+![image-20210925182647312](photo/image-20210925182647312.png)
+
+![image-20210925183119210](photo/image-20210925183119210.png)
+
+
+
+![image-20210925183225559](photo/image-20210925183225559.png)
+
+![image-20210925183339892](photo/image-20210925183339892.png)
+
+![image-20210925183410472](photo/image-20210925183410472.png)
+
+공간을 줄이기 위해 사용 
+
+![image-20210925184123128](photo/image-20210925184123128.png)
+
+![image-20210925184210780](photo/image-20210925184210780.png)
+
+
+
+![image-20210925185011862](photo/image-20210925185011862.png)
+
+
+
+![image-20210925185321349](photo/image-20210925185321349.png)
+
+![image-20210925185657307](photo/image-20210925185657307.png)
+
+
+
+
+
+![image-20210925185837386](photo/image-20210925185837386.png)
+
+![image-20210925185922270](photo/image-20210925185922270.png)
+
+
+
+![image-20210925190423016](photo/image-20210925190423016.png)
+
+![image-20210925190435157](photo/image-20210925190435157.png)
+
+
+
+![image-20210925190942557](photo/image-20210925190942557.png)
+
+![image-20210925191023628](photo/image-20210925191023628.png)
+
+![image-20210925191106376](photo/image-20210925191106376.png)
+
+![image-20210925191439505](photo/image-20210925191439505.png)
+
+![image-20210925191610380](photo/image-20210925191610380.png)
+
+4편부터
