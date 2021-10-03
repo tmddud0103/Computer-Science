@@ -1,0 +1,86 @@
+# CH11 File System Implementation
+
+## Allocation of File Data in Disk
+
+파일을 디스크에 저장하는 방법 대표적인 3가지
+
+![image-20211003163744222](photo/image-20211003163744222.png)
+
+![image-20211003163818483](photo/image-20211003163818483.png)
+
+![image-20211003164057108](photo/image-20211003164057108.png)
+
+
+
+
+
+![image-20211003164446336](photo/image-20211003164446336.png)
+
+![image-20211003164543391](photo/image-20211003164543391.png)
+
+
+
+
+
+![image-20211003164611938](photo/image-20211003164611938.png)
+
+![image-20211003164712355](photo/image-20211003164712355.png)
+
+
+
+
+
+## UNIX 파일 시스템의 구조
+
+![image-20211003164909011](photo/image-20211003164909011.png)
+
+![image-20211003164958145](photo/image-20211003164958145.png)
+
+
+
+![image-20211003165149754](photo/image-20211003165149754.png)
+
+
+
+## Free-Space Management
+
+### 비어있는 공간을 관리하는 방법
+
+![image-20211003165226594](photo/image-20211003165226594.png)
+
+![image-20211003165325369](photo/image-20211003165325369.png)
+
+![image-20211003165340868](photo/image-20211003165340868.png)
+
+
+
+
+
+![image-20211003165408354](photo/image-20211003165408354.png)
+
+![image-20211003165444913](photo/image-20211003165444913.png)
+
+
+
+## VFS and NFS
+
+![image-20211003165515253](photo/image-20211003165515253.png)
+
+![image-20211003165537613](photo/image-20211003165537613.png)
+
+
+
+![image-20211003165556024](photo/image-20211003165556024.png)
+
+![image-20211003165622581](photo/image-20211003165622581.png)
+
+![image-20211003165730189](photo/image-20211003165730189.png)
+
+
+
+### 프로그램의 실행
+
+![image-20211003165801797](photo/image-20211003165801797.png)
+
+![image-20211003165839813](photo/image-20211003165839813.png)
+

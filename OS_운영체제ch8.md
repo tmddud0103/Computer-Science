@@ -234,7 +234,7 @@ Symbolic Address => Logical Address => Physical Address
 
 ![image-20210925182027942](photo/image-20210925182027942.png)
 
-로지컬에 존재하는 만큼 페이지의 엔트리가 존재 => 엔트리가 가리키는 물리적메모리에 페이지가 존재
+로지컬에 존재하는 만큼 페이지의 엔트리가 존재 => 엔트리가 가리키는 물리적메모리에 페이지가 존재
 
 ![image-20210925182154732](photo/image-20210925182154732.png)
 
@@ -254,7 +254,7 @@ Symbolic Address => Logical Address => Physical Address
 
 ![image-20210925183410472](photo/image-20210925183410472.png)
 
-공간을 줄이기 위해 사용 
+공간을 줄이기 위해 사용 
 
 ![image-20210925184123128](photo/image-20210925184123128.png)
 
@@ -296,4 +296,6 @@ Symbolic Address => Logical Address => Physical Address
 
 ![image-20210925191610380](photo/image-20210925191610380.png)
 
-4편부터
+![image-20211003113202570](photo/image-20211003113202570.png)
+
+![image-20211003113547747](photo/image-20211003113547747.png)
